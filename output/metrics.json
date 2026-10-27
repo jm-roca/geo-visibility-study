@@ -1,0 +1,496 @@
+{
+  "answers_total": 24,
+  "answers_valid": 24,
+  "answers_failed": 0,
+  "neutral_answers": 20,
+  "runs_per_question": 3,
+  "questions": 12,
+  "models": [
+    "ChatGPT (app)",
+    "Gemini (app)"
+  ],
+  "dates": [
+    "2026-10-27"
+  ],
+  "main_brand": "coolmod",
+  "engines": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "answers": 10
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "answers": 10
+    }
+  ],
+  "exclusions": [],
+  "brands": [
+    {
+      "id": "pccomponentes",
+      "name": "PcComponentes",
+      "is_main": false,
+      "share_of_voice": {
+        "count": 19,
+        "n": 20,
+        "rate": 95,
+        "ci": [
+          76,
+          99
+        ]
+      },
+      "first_mention": {
+        "count": 16,
+        "n": 20,
+        "rate": 80,
+        "ci": [
+          58,
+          92
+        ]
+      },
+      "cited_as_source": {
+        "count": 13,
+        "n": 20,
+        "rate": 65,
+        "ci": [
+          43,
+          82
+        ]
+      },
+      "share_of_voice_by_block": {
+        "A": 100,
+        "B": 88,
+        "C": 100
+      },
+      "share_of_voice_by_engine": {
+        "chatgpt": 100,
+        "gemini": 90
+      }
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "is_main": false,
+      "share_of_voice": {
+        "count": 11,
+        "n": 20,
+        "rate": 55,
+        "ci": [
+          34,
+          74
+        ]
+      },
+      "first_mention": {
+        "count": 0,
+        "n": 20,
+        "rate": 0,
+        "ci": [
+          0,
+          16
+        ]
+      },
+      "cited_as_source": {
+        "count": 5,
+        "n": 20,
+        "rate": 25,
+        "ci": [
+          11,
+          47
+        ]
+      },
+      "share_of_voice_by_block": {
+        "A": 75,
+        "B": 38,
+        "C": 50
+      },
+      "share_of_voice_by_engine": {
+        "chatgpt": 40,
+        "gemini": 70
+      }
+    },
+    {
+      "id": "coolmod",
+      "name": "Coolmod",
+      "is_main": true,
+      "share_of_voice": {
+        "count": 10,
+        "n": 20,
+        "rate": 50,
+        "ci": [
+          30,
+          70
+        ]
+      },
+      "first_mention": {
+        "count": 0,
+        "n": 20,
+        "rate": 0,
+        "ci": [
+          0,
+          16
+        ]
+      },
+      "cited_as_source": {
+        "count": 5,
+        "n": 20,
+        "rate": 25,
+        "ci": [
+          11,
+          47
+        ]
+      },
+      "share_of_voice_by_block": {
+        "A": 88,
+        "B": 38,
+        "C": 0
+      },
+      "share_of_voice_by_engine": {
+        "chatgpt": 40,
+        "gemini": 60
+      }
+    },
+    {
+      "id": "mediamarkt",
+      "name": "MediaMarkt",
+      "is_main": false,
+      "share_of_voice": {
+        "count": 9,
+        "n": 20,
+        "rate": 45,
+        "ci": [
+          26,
+          66
+        ]
+      },
+      "first_mention": {
+        "count": 3,
+        "n": 20,
+        "rate": 15,
+        "ci": [
+          5,
+          36
+        ]
+      },
+      "cited_as_source": {
+        "count": 5,
+        "n": 20,
+        "rate": 25,
+        "ci": [
+          11,
+          47
+        ]
+      },
+      "share_of_voice_by_block": {
+        "A": 38,
+        "B": 25,
+        "C": 100
+      },
+      "share_of_voice_by_engine": {
+        "chatgpt": 50,
+        "gemini": 40
+      }
+    },
+    {
+      "id": "neobyte",
+      "name": "Neobyte",
+      "is_main": false,
+      "share_of_voice": {
+        "count": 4,
+        "n": 20,
+        "rate": 20,
+        "ci": [
+          8,
+          42
+        ]
+      },
+      "first_mention": {
+        "count": 0,
+        "n": 20,
+        "rate": 0,
+        "ci": [
+          0,
+          16
+        ]
+      },
+      "cited_as_source": {
+        "count": 1,
+        "n": 20,
+        "rate": 5,
+        "ci": [
+          1,
+          24
+        ]
+      },
+      "share_of_voice_by_block": {
+        "A": 38,
+        "B": 12,
+        "C": 0
+      },
+      "share_of_voice_by_engine": {
+        "chatgpt": 10,
+        "gemini": 30
+      }
+    }
+  ],
+  "matrix": [
+    {
+      "id": "A1",
+      "block": "A",
+      "text": "¿Cuál es la mejor tienda online para comprar un ordenador en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 2,
+        "amazon": 2,
+        "mediamarkt": 1,
+        "neobyte": 1
+      }
+    },
+    {
+      "id": "A2",
+      "block": "A",
+      "text": "¿Qué tiendas online de informática son fiables en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 2,
+        "amazon": 2,
+        "mediamarkt": 2,
+        "neobyte": 1
+      }
+    },
+    {
+      "id": "A3",
+      "block": "A",
+      "text": "Quiero un PC gaming montado, ¿qué tienda me lo monta y me lo envía a casa en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 1,
+        "pccomponentes": 2,
+        "amazon": 0,
+        "mediamarkt": 0,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "A4",
+      "block": "A",
+      "text": "¿Dónde comprar una tarjeta gráfica al mejor precio en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 2,
+        "amazon": 2,
+        "mediamarkt": 0,
+        "neobyte": 1
+      }
+    },
+    {
+      "id": "B1",
+      "block": "B",
+      "text": "Recomiéndame un portátil gaming calidad-precio por menos de 1.200 € y dime dónde comprarlo en España",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 0,
+        "pccomponentes": 2,
+        "amazon": 1,
+        "mediamarkt": 2,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "B2",
+      "block": "B",
+      "text": "Mejor monitor de 27 pulgadas a 144 Hz por menos de 300 € en España",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 0,
+        "pccomponentes": 1,
+        "amazon": 0,
+        "mediamarkt": 0,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "B3",
+      "block": "B",
+      "text": "¿Qué procesador me compro para gaming y dónde está más barato en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 1,
+        "pccomponentes": 2,
+        "amazon": 1,
+        "mediamarkt": 0,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "B4",
+      "block": "B",
+      "text": "Configuración de PC para edición de vídeo con 1.500 € de presupuesto, ¿dónde compro las piezas en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 2,
+        "amazon": 1,
+        "mediamarkt": 0,
+        "neobyte": 1
+      }
+    },
+    {
+      "id": "C1",
+      "block": "C",
+      "text": "¿Qué tienda online tiene la mejor política de devoluciones en informática en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 0,
+        "pccomponentes": 2,
+        "amazon": 2,
+        "mediamarkt": 2,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "C2",
+      "block": "C",
+      "text": "¿En qué tienda de informática puedo financiar la compra sin intereses en España?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 0,
+        "pccomponentes": 2,
+        "amazon": 0,
+        "mediamarkt": 2,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "D1",
+      "block": "D",
+      "text": "¿Es fiable Coolmod?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 1,
+        "amazon": 1,
+        "mediamarkt": 0,
+        "neobyte": 0
+      }
+    },
+    {
+      "id": "D2",
+      "block": "D",
+      "text": "¿PcComponentes o Coolmod para comprar una tarjeta gráfica?",
+      "runs": 2,
+      "mentions": {
+        "coolmod": 2,
+        "pccomponentes": 2,
+        "amazon": 0,
+        "mediamarkt": 0,
+        "neobyte": 0
+      }
+    }
+  ],
+  "top_sources": [
+    {
+      "domain": "pccomponentes.com",
+      "answers": 13,
+      "rate": 65,
+      "brand": "PcComponentes"
+    },
+    {
+      "domain": "mediamarkt.es",
+      "answers": 5,
+      "rate": 25,
+      "brand": "MediaMarkt"
+    },
+    {
+      "domain": "amazon.es",
+      "answers": 5,
+      "rate": 25,
+      "brand": "Amazon"
+    },
+    {
+      "domain": "coolmod.com",
+      "answers": 5,
+      "rate": 25,
+      "brand": "Coolmod"
+    },
+    {
+      "domain": "elcorteingles.es",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    },
+    {
+      "domain": "contrapc.es",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    },
+    {
+      "domain": "pcscan.es",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    },
+    {
+      "domain": "pass.carrefour.es",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    },
+    {
+      "domain": "wikiversus.com",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    },
+    {
+      "domain": "m8d.io",
+      "answers": 2,
+      "rate": 10,
+      "brand": null
+    }
+  ],
+  "reputation": {
+    "answers": 4,
+    "official_site_cited": 3,
+    "sources": [
+      [
+        "coolmod.com",
+        3
+      ],
+      [
+        "idealo.es",
+        2
+      ],
+      [
+        "pccomponentes.com",
+        2
+      ],
+      [
+        "hardzone.es",
+        1
+      ],
+      [
+        "es.trustpilot.com",
+        1
+      ],
+      [
+        "ocu.org",
+        1
+      ],
+      [
+        "tustiendas.es",
+        1
+      ],
+      [
+        "reddit.com",
+        1
+      ]
+    ]
+  },
+  "input_tokens": 0,
+  "output_tokens": 0
+}

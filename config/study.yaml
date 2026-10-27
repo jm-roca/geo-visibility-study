@@ -1,0 +1,88 @@
+# Configuración del estudio
+# Recogida de respuestas: por API de Gemini (engine) o manual desde las apps (manual).
+# --------------------------------------------------------------
+# Para estudiar otro sector u otra empresa solo hay que cambiar este archivo:
+# las marcas, sus variantes de nombre y las preguntas.
+
+study:
+  title: "¿Recomienda la IA a Coolmod?"
+  subtitle: "Estudio exploratorio de visibilidad en ChatGPT y Gemini · tiendas de informática en España"
+  author: "Juan Roca"
+  disclaimer: >
+    Caso de estudio propio e independiente, no encargado por ninguna de las empresas
+    analizadas. Muestra pequeña: los resultados son indicios, no conclusiones.
+  main_brand: coolmod
+
+engine:
+  provider: gemini
+  model: gemini-3.8-flash      # modelo con búsqueda en Google (grounding)
+  runs_per_question: 3          # las respuestas varían: cada pregunta se repite
+  pause_seconds: 7              # pausa entre llamadas: el nivel gratuito limita las peticiones por minuto
+
+# Recogida MANUAL (gratis): haces las preguntas en la app de cada asistente y pegas
+# las respuestas en data/manual/<id>.md. Ver: python -m geo_study template
+manual:
+  assistants:
+    - {id: chatgpt, name: ChatGPT}
+    - {id: gemini, name: Gemini}
+  # Respuestas que no se analizan, con su motivo (aparecen en la metodología del informe). Ejemplo:
+  # exclude:
+  #   - {assistant: gemini, question: A2, reason: "respuesta copiada incompleta"}
+
+# Quién redacta el resumen y el plan de acción a partir de los indicadores:
+#   auto   -> Claude por API si hay ANTHROPIC_API_KEY; si no, el texto que pegues de
+#             Claude.ai en data/narrative.json (gratis); si no, resumen simple
+#   claude | gemini | file | none
+narrative:
+  provider: auto
+  gemini_model: gemini-3.8-flash
+
+# Marcas a detectar. Los alias cubren cómo se escribe cada nombre en una respuesta.
+brands:
+  - id: coolmod
+    name: Coolmod
+    url: https://www.coolmod.com
+    domains: [coolmod.com]
+    aliases: [Coolmod, CoolMod, Cool Mod, coolmod.com]
+  - id: pccomponentes
+    name: PcComponentes
+    url: https://www.pccomponentes.com
+    domains: [pccomponentes.com]
+    aliases: [PcComponentes, PC Componentes, Pc Componentes, pccomponentes.com]
+  - id: amazon
+    name: Amazon
+    url: https://www.amazon.es
+    domains: [amazon.es, amazon.com]
+    aliases: [Amazon]
+  - id: mediamarkt
+    name: MediaMarkt
+    url: https://www.mediamarkt.es
+    domains: [mediamarkt.es]
+    aliases: [MediaMarkt, Media Markt]
+  - id: neobyte
+    name: Neobyte
+    url: https://www.neobyte.es
+    domains: [neobyte.es]
+    aliases: [Neobyte, NeoByte, neobyte.es]
+
+# Bloques de preguntas. Los bloques con share_of_voice: true no nombran ninguna tienda
+# y sirven para medir la cuota de voz. El bloque D nombra a la marca y mide reputación.
+blocks:
+  A: {name: "Elegir tienda", share_of_voice: true}
+  B: {name: "Producto con intención de compra", share_of_voice: true}
+  C: {name: "Servicio y condiciones", share_of_voice: true}
+  D: {name: "Marca y reputación", share_of_voice: false}
+
+questions:
+  - {id: A1, block: A, text: "¿Cuál es la mejor tienda online para comprar un ordenador en España?"}
+  - {id: A2, block: A, text: "¿Qué tiendas online de informática son fiables en España?"}
+  - {id: A3, block: A, text: "Quiero un PC gaming montado, ¿qué tienda me lo monta y me lo envía a casa en España?"}
+  - {id: A4, block: A, text: "¿Dónde comprar una tarjeta gráfica al mejor precio en España?"}
+  - {id: B1, block: B, text: "Recomiéndame un portátil gaming calidad-precio por menos de 1.200 € y dime dónde comprarlo en España"}
+  - {id: B2, block: B, text: "Mejor monitor de 27 pulgadas a 144 Hz por menos de 300 € en España"}
+  - {id: B3, block: B, text: "¿Qué procesador me compro para gaming y dónde está más barato en España?"}
+  - {id: B4, block: B, text: "Configuración de PC para edición de vídeo con 1.500 € de presupuesto, ¿dónde compro las piezas en España?"}
+  - {id: C1, block: C, text: "¿Qué tienda online tiene la mejor política de devoluciones en informática en España?"}
+  - {id: C2, block: C, text: "¿En qué tienda de informática puedo financiar la compra sin intereses en España?"}
+  - {id: D1, block: D, text: "¿Es fiable Coolmod?"}
+  - {id: D2, block: D, text: "¿PcComponentes o Coolmod para comprar una tarjeta gráfica?"}

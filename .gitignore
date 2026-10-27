@@ -1,0 +1,10 @@
+.env
+output/demo/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+data/
+.env
+.env

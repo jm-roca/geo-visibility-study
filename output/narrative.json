@@ -1,0 +1,56 @@
+{
+  "headline": "Coolmod aparece en el 50 % de las respuestas de ChatGPT y Gemini, a la altura de Amazon (55 %) pero lejos de PcComponentes (95 %), y en esta muestra nunca es la primera tienda que recomiendan (0 %).",
+  "findings": [
+    "La IA la reconoce como especialista: aparece en el 88 % de las respuestas cuando se pregunta dónde comprar, pero baja al 38 % cuando la pregunta es por un producto concreto (un portátil, un monitor, un procesador).",
+    "Es invisible en servicio y condiciones: aparece en el 0 % de las respuestas sobre devoluciones y financiación, donde PcComponentes y MediaMarkt aparecen en el 100 %.",
+    "Siempre llega en segunda línea: PcComponentes es la primera tienda nombrada en el 80 % de las respuestas y Coolmod en ninguna. Los asistentes la presentan como la alternativa con la que comparar precios.",
+    "Su web pesa poco como fuente: los asistentes citan coolmod.com en el 25 % de las respuestas, frente al 65 % de pccomponentes.com, cuyas páginas de ayuda sobre devoluciones se citan directamente.",
+    "Por asistente, aparece algo más en Gemini (60 %) que en ChatGPT (40 %). Con 10 respuestas por asistente, la diferencia apunta a una tendencia, pero no es concluyente."
+  ],
+  "reputation": [
+    {
+      "question_id": "D1",
+      "tone": "mixto",
+      "summary": "Ambos asistentes la consideran fiable: ChatGPT cita una valoración de 4,5 sobre 5 en Trustpilot y la garantía de 3 años. Como puntos a vigilar, ChatGPT menciona una brecha de seguridad publicada en diciembre de 2025 (citando a HardZone) y reclamaciones en la OCU; Gemini señala plazos de envío y comunicación lentos en algunos casos."
+    },
+    {
+      "question_id": "D2",
+      "tone": "mixto",
+      "summary": "Ambos la ven como opción segura y con ofertas agresivas, pero a igualdad de precio se inclinan por PcComponentes. ChatGPT lo justifica con el plazo de devolución (30 días frente a 14) y Gemini con la rapidez de envío y la sencillez de las devoluciones."
+    }
+  ],
+  "actions": [
+    {
+      "action": "Publicar una página de condiciones clara y citable (devoluciones, garantía de 3 años, financiación y plazos de envío), con datos concretos y marcado FAQPage, y enlazarla desde la portada.",
+      "why": "Coolmod aparece en el 0 % de las respuestas sobre servicio y condiciones, mientras los asistentes citan directamente las páginas de ayuda de PcComponentes.",
+      "impact": "alto",
+      "effort": "medio"
+    },
+    {
+      "action": "Valorar como decisión de negocio ampliar el plazo de devolución, o comunicar mejor las condiciones actuales si ya son más amplias de lo que dicen los asistentes.",
+      "why": "En la comparación directa, ChatGPT elige a PcComponentes por el plazo de devolución (30 días frente a 14): es el argumento con el que la IA desempata.",
+      "impact": "alto",
+      "effort": "alto"
+    },
+    {
+      "action": "Crear guías de compra propias por uso y presupuesto (portátil gaming por menos de 1.200 €, PC para edición de vídeo, mejor procesador para jugar) y enlazarlas desde las categorías.",
+      "why": "En las preguntas de producto concreto Coolmod baja al 38 %, y su web se cita como fuente en el 25 % de las respuestas, frente al 65 % de pccomponentes.com.",
+      "impact": "alto",
+      "effort": "medio"
+    },
+    {
+      "action": "Gestionar el relato de reputación: una página de seguridad y transparencia sobre el incidente de 2025 y respuesta activa a las reseñas sobre plazos de envío.",
+      "why": "Cuando se pregunta por la marca, ChatGPT menciona la brecha de seguridad y las reclamaciones en la OCU, y Gemini los plazos de envío.",
+      "impact": "medio",
+      "effort": "medio"
+    },
+    {
+      "action": "Mejoras técnicas rápidas: crear /llms.txt, añadir schema WebSite y FAQPage, unificar el nombre de marca en título, H1 y schema, y enlazar perfiles de Wikidata o Wikipedia (sameAs).",
+      "why": "La auditoría técnica da a coolmod.com 67 sobre 100: no tiene llms.txt (0 de 6), sus datos estructurados se quedan en 9 de 14 y las señales de marca en 6 de 12. MediaMarkt, con llms.txt, llega a 74.",
+      "impact": "medio",
+      "effort": "bajo"
+    }
+  ],
+  "generated_by": "Claude, a partir de los indicadores calculados y las respuestas de reputación",
+  "unverified_numbers": []
+}

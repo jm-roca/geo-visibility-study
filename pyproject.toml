@@ -1,0 +1,9 @@
+[project]
+name = "geo-visibility-study"
+version = "0.1.0"
+description = "Mide cuánto recomienda Gemini a una marca frente a su competencia y lo convierte en un informe con plan de acción."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

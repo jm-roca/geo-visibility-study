@@ -1,0 +1,23 @@
+{
+  "_nota": "Texto SIMULADO con la estructura que devuelve Claude, para la demo sin clave de API.",
+  "headline": "Bitforja aparece en el 60 % de las respuestas, tercera de cuatro tiendas, pero con una gran diferencia entre asistentes: 80 % en ChatGPT frente a 40 % en Gemini.",
+  "findings": [
+    "Mercadia lidera la cuota de voz con el 85 %, y es la primera tienda citada en el 60 % de las respuestas; Bitforja solo lo es en el 10 %.",
+    "En Gemini, Bitforja aparece en el 40 % de las respuestas, la mitad que en ChatGPT (80 %): es el asistente donde más visibilidad pierde.",
+    "En las preguntas de servicio y condiciones (devoluciones, financiación) Bitforja cae al 25 %, mientras Voltio Store llega al 100 %.",
+    "Los asistentes se apoyan en fuentes de terceros: youtube.com aparece en el 50 % de las respuestas y reddit.com en el 45 %; la web de Bitforja, en el 30 %.",
+    "Cuando se pregunta directamente por la marca, la valoración es positiva con matices sobre posventa, y la web oficial se cita en 2 de 4 respuestas."
+  ],
+  "reputation": [
+    {"question_id": "D1", "tone": "mixto", "summary": "Ambos asistentes la consideran fiable por trayectoria y valoraciones; Gemini añade quejas puntuales sobre el servicio posventa."},
+    {"question_id": "D2", "tone": "positivo", "summary": "Recomiendan Bitforja frente a Mercadia por surtido de tarjetas gráficas, con la salvedad de retrasos en devoluciones en temporada alta."}
+  ],
+  "actions": [
+    {"action": "Crear páginas de ayuda claras sobre devoluciones, garantía y financiación, con datos concretos (plazos, condiciones) y marcado FAQPage.", "why": "En las preguntas de servicio Bitforja aparece en el 25 % de las respuestas, frente al 100 % de Voltio Store.", "impact": "alto", "effort": "medio"},
+    {"action": "Reforzar las señales que usa Google: ficha de empresa, schema Organization con enlaces sameAs y presencia en las webs que Gemini cita.", "why": "En Gemini aparece en el 40 % de las respuestas, frente al 80 % en ChatGPT.", "impact": "alto", "effort": "medio"},
+    {"action": "Mejorar la presencia en las comunidades y canales que consultan los asistentes: análisis en YouTube y respuestas en foros.", "why": "youtube.com aparece como fuente en el 50 % de las respuestas, más que la propia web de la marca (30 %).", "impact": "alto", "effort": "alto"},
+    {"action": "Publicar /llms.txt con las secciones clave del catálogo y de atención al cliente.", "why": "La auditoría técnica no encuentra el archivo llms.txt (0 de 6).", "impact": "medio", "effort": "bajo"},
+    {"action": "Crear guías de compra propias enlazadas desde las fichas de producto, para ser la primera recomendación y no una más.", "why": "Bitforja es la primera tienda citada solo en el 10 % de las respuestas.", "impact": "medio", "effort": "medio"}
+  ],
+  "generated_by": "Claude (texto simulado para la demo)"
+}

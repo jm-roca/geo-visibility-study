@@ -1,0 +1,31 @@
+{
+  "url": "https://librotek.example",
+  "score": 63,
+  "band": "good",
+  "error": null,
+  "score_version": 2,
+  "score_max": {
+    "google_ai": 20,
+    "robots": 14,
+    "schema": 14,
+    "content": 14,
+    "brand_entity": 12,
+    "meta": 11,
+    "llms": 6,
+    "signals": 6,
+    "ai_discovery": 3
+  },
+  "score_breakdown": {
+    "google_ai": 9,
+    "robots": 14,
+    "schema": 8,
+    "content": 7,
+    "brand_entity": 9,
+    "meta": 10,
+    "llms": 0,
+    "signals": 6,
+    "ai_discovery": 0
+  },
+  "recommendations": [],
+  "recommendations_by_category": {}
+}

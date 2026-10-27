@@ -1,0 +1,48 @@
+# Configuración de la DEMO: tiendas ficticias y respuestas simuladas.
+# Sirve para ver el informe completo sin claves de API. No son datos reales.
+
+study:
+  title: "¿Recomienda la IA a Bitforja? (demo)"
+  subtitle: "Ejemplo con tiendas ficticias y respuestas simuladas"
+  author: "Juan Roca"
+  disclaimer: >
+    Demostración con tiendas ficticias y respuestas simuladas. Ninguna cifra de este
+    informe describe a una empresa real.
+  main_brand: bitforja
+
+engine:
+  provider: gemini
+  model: gemini-3.8-flash
+  runs_per_question: 3
+  pause_seconds: 0
+
+manual:
+  assistants:
+    - {id: chatgpt, name: ChatGPT}
+    - {id: gemini, name: Gemini}
+
+brands:
+  - {id: bitforja, name: Bitforja, url: https://bitforja.example, domains: [bitforja.es], aliases: [Bitforja, Bit Forja]}
+  - {id: mercadia, name: Mercadia, url: https://mercadia.example, domains: [mercadia.es], aliases: [Mercadia]}
+  - {id: voltio, name: Voltio Store, url: https://voltio.example, domains: [voltiostore.es], aliases: [Voltio Store, Voltio]}
+  - {id: librotek, name: Librotek, url: https://librotek.example, domains: [librotek.es], aliases: [Librotek]}
+
+blocks:
+  A: {name: "Elegir tienda", share_of_voice: true}
+  B: {name: "Producto con intención de compra", share_of_voice: true}
+  C: {name: "Servicio y condiciones", share_of_voice: true}
+  D: {name: "Marca y reputación", share_of_voice: false}
+
+questions:
+  - {id: A1, block: A, text: "¿Cuál es la mejor tienda online para comprar componentes de PC en España?"}
+  - {id: A2, block: A, text: "¿Qué tiendas online de informática son fiables en España?"}
+  - {id: A3, block: A, text: "Quiero un PC gaming montado, ¿qué tienda me lo monta y me lo envía a casa en España?"}
+  - {id: A4, block: A, text: "¿Dónde comprar una tarjeta gráfica al mejor precio en España?"}
+  - {id: B1, block: B, text: "Recomiéndame un portátil gaming calidad-precio por menos de 1.200 € y dime dónde comprarlo en España"}
+  - {id: B2, block: B, text: "Mejor monitor de 27 pulgadas a 144 Hz por menos de 300 € en España"}
+  - {id: B3, block: B, text: "¿Qué procesador me compro para gaming y dónde está más barato en España?"}
+  - {id: B4, block: B, text: "Configuración de PC para edición de vídeo con 1.500 € de presupuesto, ¿dónde compro las piezas en España?"}
+  - {id: C1, block: C, text: "¿Qué tienda online tiene la mejor política de devoluciones en informática en España?"}
+  - {id: C2, block: C, text: "¿En qué tienda de informática puedo financiar la compra sin intereses en España?"}
+  - {id: D1, block: D, text: "¿Es fiable Bitforja?"}
+  - {id: D2, block: D, text: "¿Bitforja o Mercadia para comprar una tarjeta gráfica?"}

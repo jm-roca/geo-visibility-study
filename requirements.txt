@@ -1,0 +1,7 @@
+# Versión fijada: geo-optimizer cambia casi a diario y el estudio debe poder repetirse igual.
+geo-optimizer-skill==4.19.8
+anthropic>=0.40
+requests>=2.31
+pyyaml>=6.0
+python-dotenv>=1.0
+pytest>=8.0

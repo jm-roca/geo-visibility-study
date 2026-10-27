@@ -1,0 +1,43 @@
+{
+  "url": "https://bitforja.example",
+  "score": 62,
+  "band": "good",
+  "error": null,
+  "score_version": 2,
+  "score_max": {
+    "google_ai": 20,
+    "robots": 14,
+    "schema": 14,
+    "content": 14,
+    "brand_entity": 12,
+    "meta": 11,
+    "llms": 6,
+    "signals": 6,
+    "ai_discovery": 3
+  },
+  "score_breakdown": {
+    "google_ai": 11,
+    "robots": 14,
+    "schema": 6,
+    "content": 9,
+    "brand_entity": 7,
+    "meta": 10,
+    "llms": 0,
+    "signals": 5,
+    "ai_discovery": 0
+  },
+  "recommendations": [
+    "Añadir schema Organization con sameAs",
+    "Añadir FAQPage en páginas de ayuda",
+    "Crear /llms.txt"
+  ],
+  "recommendations_by_category": {
+    "schema": [
+      "Añadir schema Organization con sameAs",
+      "Añadir FAQPage en páginas de ayuda"
+    ],
+    "llms": [
+      "Crear /llms.txt"
+    ]
+  }
+}
